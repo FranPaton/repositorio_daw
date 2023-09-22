@@ -31,7 +31,7 @@ System.out.println("Hola Mundo");
 [Enlaces a otro fichero](./markdown_enlazado.md/)
 
 #### Insertar imágenes
-![Logo Diablo IV.](./diabloiv.png/)
+![Logo Diablo IV.](./diablo4.png/)
 
 #### Insertar tablas
 
