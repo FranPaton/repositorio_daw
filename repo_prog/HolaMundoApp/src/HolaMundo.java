@@ -10,10 +10,13 @@ public class HolaMundo {
 	/**
 	 * @param args
 	 */
+	public static void mostrarMensaje(String s) {
+		System.out.println(s);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola Mundo");
-		System.out.println("Adios Mundo");
+		String mensaje = "Hola Mundo";
+		mostrarMensaje(mensaje);
 	}
 
 }
