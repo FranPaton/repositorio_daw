@@ -1,3 +1,4 @@
+package boletin;
 import java.util.*;
 
 public class EjemploTiposApp {
