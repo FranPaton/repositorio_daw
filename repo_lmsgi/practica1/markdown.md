@@ -18,7 +18,6 @@ Para la cursiva, se utilizaa un asterisco * antes y después del texto. Para la 
 *__Cursiva y negrita__*
 ````
 
-*Cursiva y negrita*
 
 ## Añadir encabezados
 
