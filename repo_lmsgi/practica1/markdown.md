@@ -8,17 +8,34 @@ La sintáxis es sencilla, básicamente se trata de insertar ciertos caracteres e
 
 Así, podemos entre otras cosas:
 
+## Poner un texto en cursiva, negrita o ambas
+
+Para la cursiva, se utilizaa un asterisco * antes y después del texto. Para la negrita dos asteriscos **, y para ambas un asterisco y dos guiones bajos.
+
+```
+*Cursiva*
+**Negrita**
+*__Cursiva y negrita__*
+````
+
+*Cursiva y negrita*
+
 ## Añadir encabezados
 
 Los encabezados se crean añadiendo almohadillas # al principio de cada línea. Cuántos más añadamos, más pequeño será el encabezado. Podemos incluir hasta 6 almohadillas, que sería el encabezado más pequeño
 
 ## Inclusión de bloques de código
 
-Podemos añadir trozos de código que no son interpretados, sino que se muestran literalmente como han sido escritos. Con este ejemplo, Markdown no interpreta que las 4 almohadillas sean un encabezado.
+Podemos añadir trozos de código que no son interpretados, sino que se muestran literalmente como han sido escritos. Con este ejemplo, Markdown no interpreta que las 4 almohadillas sean un encabezado. 
 
-```
-#### Esto es una cabecera de Markdown de nivel 4
+Se crean añadiendo una línea con tres o cuatro tildes invertidas al principio y al final del bloque. Esto permite anidar un bloque de codigo dentro de otro, como en este ejemplo.
+
 ````
+```
+Esto es un bloque de código.
+```
+````
+
 ## Crear listas ordenadas y desornadas
 
 Al igual que en HTML, se pueden crear crear listas ordenadas, añadiendo nñumeros ordenados y punto antes de un elemento, o desordenados, añadiendo asteriscos o guiones.
