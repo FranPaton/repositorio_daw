@@ -13,8 +13,7 @@ public class Ejercicio11 {
 		 
 		 /*System.out.println("Nombre: " + nombre + " " + apellidos +
 				 			"Iniciales: " +/ f + m + r + p
-				 );*/
-		 
+				 );*/ 
 		 System.out.println(nombre + apellidos + f + m + r + p);	 
 		 
 	}
