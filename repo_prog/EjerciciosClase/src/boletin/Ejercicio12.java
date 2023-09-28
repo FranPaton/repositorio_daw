@@ -12,7 +12,7 @@ public class Ejercicio12 {
 		
 		System.out.println(a + b + c + d + e);
 		
-		System.out.println(a + "" + b + "" + c + "" + d +  "" + e);
+		System.out.println("" + a + b  + c + d + e);
 		
 		System.out.println(Character.toString(a) + Character.toString(b) +  Character.toString(c) +  Character.toString(d) +  Character.toString(e) );
 		
