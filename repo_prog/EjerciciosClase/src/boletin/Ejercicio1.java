@@ -3,7 +3,7 @@ package boletin;
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		double d1 = 10, d2 = 20;
 		double res = d1 * 2 - 4;
 		System.out.println("d1 = 10 | d2 = 20");
