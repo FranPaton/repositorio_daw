@@ -1,42 +1,70 @@
-# PRACTICA 1 DE LENGUAJE DE MARCAS DE 1º DAW
+# PRACTICA 1 DE LENGUAJES DE MARCADO DE 1º DAW
 
 ## EL LENGUAJE DE MARCADO DE TEXTO MARKDOWN
 
-**Markdown** es un *lenguaje de marcado* que permite la aplicación de *__formato__* a un texto empleando una serie de caracteres especiales
+**Markdown** es un *lenguaje de marcado* que permite la aplicación de *__formato__* a un texto empleando una serie de caracteres especiales.
 
-Permite, entre otras cosas:
+La sintáxis es sencilla, básicamente se trata de insertar ciertos caracteres especiales al principio de cada línea, o antes y después de cada elemento al que queramos dar formato.
 
-#### Inclusión de bloques de código
+Así, podemos entre otras cosas:
+
+## Añadir encabezados
+
+Los encabezados se crean añadiendo almohadillas # al principio de cada línea. Cuántos más añadamos, más pequeño será el encabezado. Podemos incluir hasta 6 almohadillas, que sería el encabezado más pequeño
+
+## Inclusión de bloques de código
+
+Podemos añadir trozos de código que no son interpretados, sino que se muestran literalmente como han sido escritos. Con este ejemplo, Markdown no interpreta que las 4 almohadillas sean un encabezado.
+
 ```
-System.out.println("Hola Mundo"); 
+#### Esto es una cabecera de Markdown de nivel 4
 ````
-#### Listas ordenadas
+## Crear listas ordenadas y desornadas
+
+Al igual que en HTML, se pueden crear crear listas ordenadas, añadiendo nñumeros ordenados y punto antes de un elemento, o desordenados, añadiendo asteriscos o guiones.
 
 1. Lista1 
-1. Lista2
-1. Lista3
+2. Lista2
+3. Lista3
     1. Lista3_1
-    1. Lista3_2
-    1. Lista3_3
- 
-#### Listas desordenadas   
+    2. Lista3_2
+    3. Lista3_3  
 * Lista1
 * Lista2
 * Lista3
 * Lista4
 
-#### Enlaces a URL y a ficheros
+## Enlaces a URL, ficheros e imágenes
+
+Markdown permite crear enlaces online o enlaces por referencia a archivos locales, como ficheros o imágenes.
+
+Para ello se usa el formato:
+```
+[Texto del enlace](ruta local)
+````
+La ruta local puede ser a otro archivo markdown con extensión .md, o un enlace a una imagen, que se mostraría en el documento.
+
+Para insertar una imagen, el formato es similar, sólo que en lugar del texto del enlace, se inserta un texto alternativo en caso de la imagen no pudiera ser cargada correctamente.
+
+```
+![Texto alternativo](ruta local)
+````
+Vemos varios ejemplos: 
+
 [Búsqueda de Markdown en Google](https://www.google.com/search?q=markdown)
 
 [Enlaces a otro fichero](./markdown_enlazado.md/)
 
-#### Insertar imágenes
-![Logo Diablo IV.](./diablo4.png/)
+![Logo Markdown.](./markdown.png/)
 
-#### Insertar tablas
+## Insertar tablas
 
-| Nombre       | Apellido      |
-| -------------|:-------------:|
-| Juan         | Sánchez       |
-| Diego        | López         |
-| Fernando     | Ruíz          |
+Las tablas se suelen utilizar para presentar información de forma clara y concisa, y para que un documento sea más fácil de leer y comprender, sobre todo si muestra mucha información.
+
+Para dibujarlas, se utiliza el tubo o barra vertical | y un guión para hacer lineas de encabezado. Se pueden usar : en la linea de encabeza para alinear el texto de cada columna. A la izquierda, a la derecha, y se ponen los : a los dos lados, el texto de la columna estará centrado.
+
+| Nombre       | Apellido      | Edad    |
+| :------------|--------------:|:-------:|
+| Juan         | Sánchez       | 25      |
+| Diego        | Fernández     | 40      |
+| Fernando     | Ruíz          | 18      |
