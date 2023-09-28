@@ -18,11 +18,18 @@ Para la cursiva, se utilizaa un asterisco * antes y después del texto. Para la 
 *__Cursiva y negrita__*
 ````
 
-*Cursiva y negrita*
 
 ## Añadir encabezados
 
-Los encabezados se crean añadiendo almohadillas # al principio de cada línea. Cuántos más añadamos, más pequeño será el encabezado. Podemos incluir hasta 6 almohadillas, que sería el encabezado más pequeño
+Los encabezados se crean añadiendo almohadillas # al principio de cada línea. Cuántos más añadamos, más pequeño será el encabezado. Podemos incluir hasta 6 almohadillas, que sería el encabezado más pequeño.
+```
+# Encabezado 1
+## Encabezado 2
+### Encabezado 3
+#### Encabezado 4
+##### Encabezado 5
+###### Encabezado 6
+```
 
 ## Inclusión de bloques de código
 
@@ -78,7 +85,7 @@ Vemos varios ejemplos:
 
 Las tablas se suelen utilizar para presentar información de forma clara y concisa, y para que un documento sea más fácil de leer y comprender, sobre todo si muestra mucha información.
 
-Para dibujarlas, se utiliza el tubo o barra vertical | y un guión para hacer lineas de encabezado. Se pueden usar : en la linea de encabeza para alinear el texto de cada columna. A la izquierda, a la derecha, y se ponen los : a los dos lados, el texto de la columna estará centrado.
+Para dibujarlas, se utiliza el tubo o barra vertical | y un guión para hacer lineas de encabezado. Se pueden usar : en la linea de encabeza para alinear el texto de cada columna. A la izquierda, a la derecha, y si se ponen : a los dos lados, el texto de la columna estará centrado.
 
 | Nombre       | Apellido      | Edad    |
 | :------------|--------------:|:-------:|
