@@ -35,7 +35,7 @@ Los encabezados se crean añadiendo almohadillas # al principio de cada línea. 
 
 Podemos añadir trozos de código que no son interpretados, sino que se muestran literalmente como han sido escritos. Con este ejemplo, Markdown no interpreta que las 4 almohadillas sean un encabezado. 
 
-Se crean añadiendo una línea con tres o cuatro tildes invertidas al principio y al final del bloque. Esto permite anidar un bloque de codigo dentro de otro, como en este ejemplo.
+Se crean añadiendo una línea con tres o cuatro tildes invertidas al principio y al final del bloque. 
 
 ````
 ```
