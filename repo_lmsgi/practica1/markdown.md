@@ -85,7 +85,7 @@ Vemos varios ejemplos:
 
 Las tablas se suelen utilizar para presentar información de forma clara y concisa, y para que un documento sea más fácil de leer y comprender, sobre todo si muestra mucha información.
 
-Para dibujarlas, se utiliza el tubo o barra vertical | y un guión para hacer lineas de encabezado. Se pueden usar : en la linea de encabeza para alinear el texto de cada columna. A la izquierda, a la derecha, y si se ponen : a los dos lados, el texto de la columna estará centrado.
+Para dibujarlas, se utiliza la tubería o barra vertical | y un guión para hacer lineas de encabezado. Se pueden usar : en la linea de encabeza para alinear el texto de cada columna. A la izquierda, a la derecha, y si se ponen : a los dos lados, el texto de la columna estará centrado.
 
 | Nombre       | Apellido      | Edad    |
 | :------------|--------------:|:-------:|
