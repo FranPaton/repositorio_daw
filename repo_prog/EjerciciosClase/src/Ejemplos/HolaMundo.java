@@ -1,7 +1,7 @@
 /**
  * 
  */
-package boletin;
+package Ejemplos;
 
 /**
  * 

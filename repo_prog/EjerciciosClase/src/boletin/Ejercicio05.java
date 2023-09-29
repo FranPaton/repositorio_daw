@@ -1,6 +1,6 @@
 package boletin;
 
-public class Ejercicio5 {
+public class Ejercicio05 {
 
 	public static void main(String[] args) {
 		

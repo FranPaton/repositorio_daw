@@ -1,4 +1,4 @@
-package boletin;
+package Ejemplos;
 import java.util.*;
 
 public class EjemploTiposApp {
