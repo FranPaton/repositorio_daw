@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura num="999">
+    <cliente numero="879">
+        <nombre>José Rodríguez</nombre>
+        <telefono>910101010</telefono>
+    </cliente>
+    <datos_factura>
+        <concepto ref="A101">
+            <descripcion>Placa Base QDI</descripcion>
+            <cantidad>1</cantidad>
+            <precio>230</precio>
+        </concepto>
+        <concepto ref="A105">
+            <descripcion>DIMM DDR 512 MB</descripcion>
+            <cantidad>4</cantidad>
+            <precio>110</precio>
+        </concepto>
+        <concepto ref="107">
+            <descripcion>Disco Duro 800GB</descripcion>
+            <cantidad>1</cantidad>
+            <precio>150</precio>
+        </concepto>       
+    </datos_factura>
+</factura>
