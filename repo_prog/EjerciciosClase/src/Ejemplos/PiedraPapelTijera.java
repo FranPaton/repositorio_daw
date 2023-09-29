@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PiedraPapelTijera {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int comp = (int)Math.floor((Math.random() * 3));
 		String jugador;
 		String ganador;
