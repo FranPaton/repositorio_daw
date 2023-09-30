@@ -45,7 +45,7 @@ public class PiedraPapelTijeraV2 {
 				         + "\n  TIJERA";
 	
 		System.out.print("Jugador elige: piedra, papel o tijera: "); //print en lugar de println permite la entrada de datos en la misma línea
-		jugadorElige = entrada.nextLine();
+		jugadorElige = entrada.nextLine().toLowerCase();
 			
 		//Convertimos el número generado por el random en su string correspondiente, 0 = piedra, 1 = papel, 2 = tijera, que guardamos en compElige
 		compElige = (comp == 0 ? "piedra" : //piedra = 0, papel = 1, tijera = 2 comp
