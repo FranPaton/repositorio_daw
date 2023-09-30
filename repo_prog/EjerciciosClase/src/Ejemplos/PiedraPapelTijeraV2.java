@@ -68,14 +68,14 @@ public class PiedraPapelTijeraV2 {
 						  );
 		
 		/*ganador = (jugadorElige.equals("piedra") && compElige.equals("papel") ?  "Papel gana a piedra. Ha ganado la computadora." : //Piedra contra papel gana papel (comp)
-			       jugadorElige.equals("piedra") && compElige.equals("tijera") ? "Piedra gana a tijera. Ha ganado el jugador." : //Piedra contra tijera gana tijera (jugador)
-			       jugadorElige.equals("papel") && compElige.equals("piedra") ?  "Papel gana a piedra. Ha ganado el jugador." : //Papel contra piedra gana papel (jugador)
-			       jugadorElige.equals("papel") && compElige.equals("tijera") ?  "Tijera gana a papel. Ha ganado la computadora." : //Papel contra tijera gana tijera (comp)
-			       jugadorElige.equals("tijera") && compElige.equals("piedra") ? "Piedra gana a tijera. Ha ganado la computadora." : //Tijera contra piedra gana piedra (comp)
-			       jugadorElige.equals("tijera") && compElige.equals("papel") ?  "Tijera gana a papel. Ha ganado el jugador." : //Tijera contra papel gana tijera (jugador)
-				   									   						     "Empate."					   
-		          );
-		*/
+	     *          jugadorElige.equals("piedra") && compElige.equals("tijera") ? "Piedra gana a tijera. Ha ganado el jugador." : //Piedra contra tijera gana tijera (jugador)
+	     *          jugadorElige.equals("papel") && compElige.equals("piedra") ?  "Papel gana a piedra. Ha ganado el jugador." : //Papel contra piedra gana papel (jugador)
+	     *          jugadorElige.equals("papel") && compElige.equals("tijera") ?  "Tijera gana a papel. Ha ganado la computadora." : //Papel contra tijera gana tijera (comp)
+	     *          jugadorElige.equals("tijera") && compElige.equals("piedra") ? "Piedra gana a tijera. Ha ganado la computadora." : //Tijera contra piedra gana piedra (comp)
+	     *          jugadorElige.equals("tijera") && compElige.equals("papel") ?  "Tijera gana a papel. Ha ganado el jugador." : //Tijera contra papel gana tijera (jugador)
+		 *  									   						             "Empate."					   
+         *          );
+		 */
 		
 		ganador = (jugadorElige.equals(compElige)) ? "Empate " :                    //Mismo resultado, empate
 				  (jugadorElige.equals("piedra") && compElige.equals("tijera")) ||  //Jugador gana, piedra contra tijera 
