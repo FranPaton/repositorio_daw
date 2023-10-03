@@ -19,6 +19,7 @@ public class PiedraPapelTijera {
 		compElige = (comp == 0 ? "piedra" : 
 	   		 		 comp == 1 ? "papel" :
 	   			 		         "tijera");
+		
 		System.out.println("Computadora ha elegido " + compElige + ".");
 		
 		ganador = (jugadorElige.equals(compElige)) ? "Empate " :                    //Mismo resultado, empate
