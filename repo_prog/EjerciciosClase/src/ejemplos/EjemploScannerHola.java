@@ -1,4 +1,4 @@
-package Ejemplos;
+package ejemplos;
 
 import java.util.Scanner;
 
@@ -10,6 +10,8 @@ public class EjemploScannerHola {
 		System.out.println("Introduce tu nombre: ");
 		nombre = entrada.nextLine();
 		System.out.println(String.format("¡Hola, %s!", nombre));
+		entrada.close();
+		
 		
 	}
 

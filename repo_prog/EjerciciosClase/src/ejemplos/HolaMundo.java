@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Ejemplos;
+package ejemplos;
 
 /**
  * 

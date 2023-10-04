@@ -1,4 +1,4 @@
-package Ejemplos;
+package ejemplos;
 
  /* PIEDRA, PAPEL, TIJERA CON MANEJO DE ERROR DE ENTRADA */
 

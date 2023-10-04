@@ -1,4 +1,4 @@
-package Ejemplos;
+package estructurascontrol;
 
 import java.util.Scanner;
 
@@ -17,6 +17,8 @@ public class NumeroPar {
 		}
 		
 		System.out.println("\nEl número " + i + " es " + msg);
+		
+		scn.close();
 	}
 	
 

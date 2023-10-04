@@ -1,4 +1,4 @@
-package Ejemplos;
+package ejemplos;
 import java.util.*;
 
 public class EjemploTiposApp {
@@ -24,6 +24,7 @@ public class EjemploTiposApp {
 		System.out.println("La variable 'sh' es de tipo short y su valor es " + sh);
 		System.out.println("La variable 'lo' es de tipo long y su valor es " + lo);
 		System.out.println("La variable 'f' es de tipo float y su valor es " + f);
+		System.out.println("La variable 'd' es de tipo double y su valor es " + d);
 		System.out.println("La variable 'c' es de tipo char y su valor es " + c);
 		System.out.println("La variable 's' es de tipo String y su valor es " + s);
 		System.out.println("La variable 'intArray' es una variable de tipo array de enteros y su valor es " + Arrays.toString(intArray));		

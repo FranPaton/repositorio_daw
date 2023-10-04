@@ -1,4 +1,4 @@
-package Ejemplos;
+package estructurascontrol;
 
 import java.util.Scanner;
 
@@ -16,16 +16,13 @@ public class FormatoHora {
 		System.out.println("Introduce el segundo: ");
 		segundo = entrada.nextInt();
 		
-		
 		if (hora > 12) {
 			hora -= 12;
 			formatoHora = " p.m.";		
 		}
 		
 		System.out.println("Son las " + hora + ":" + minuto + ":" + segundo + formatoHora );
-		
-		
+		entrada.close();
 
 	}
-
 }
