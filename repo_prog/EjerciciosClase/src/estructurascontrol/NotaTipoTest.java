@@ -38,7 +38,7 @@ public class NotaTipoTest {
 			//System.out.println(msgResultado);
 					
 			switch(notaMedia) {
-				case 0,1,2,3,4:
+				case 0,1,2,3,4 :
 				{
 					msgResultado += " - Insuficiente";
 					break;
@@ -56,17 +56,18 @@ public class NotaTipoTest {
 					msgResultado += " - Sobresaliente";
 					break;
 				}
-				default: msgResultado += " - Insuficiente";
+				default: { 
+					msgResultado += " - Insuficiente";
+					break;
+				}
 				
 			}
-			
 		}
 		else {
 			msgResultado = "Error. La suma de aciertos y errores no puede superar el número de preguntas";
 		}
 		
 		System.out.println(msgResultado);
-		
 		
 	}
 
