@@ -18,7 +18,7 @@ public class Ejercicio3 {
 		tiempoCaida = Math.sqrt((altura*2)/GRAVEDAD);
 		
 		System.out.println("Tiempo de caída: " + tiempoCaida);
-		
+		entrada.close();
 
 	}
 
