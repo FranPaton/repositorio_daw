@@ -54,7 +54,7 @@ public class NumeroMes {
 			System.out.println("Error. Introduce un número valido, de 1 a 12");
 			break;
 		}
-
+		entrada.close();
 	}
 
 }

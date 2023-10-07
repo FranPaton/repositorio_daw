@@ -32,7 +32,8 @@ public class TestFacilito {
 				+ "\n\t1) Python"
 				+ "\n\t2) Javascript / Typescript"
 				+ "\n\t3) Rust"
-				+ "\n\t4) Otro (Kotlin, Go, PHP, C#";		
+				+ "\n\t4) Otro (Kotlin, Go, PHP, C#";	
+		System.out.println(pregunta4);	
 		
 		
 		

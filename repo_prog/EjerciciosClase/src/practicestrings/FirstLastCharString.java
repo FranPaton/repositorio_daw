@@ -19,8 +19,10 @@ public class FirstLastCharString {
 		System.out.println("Introduce cadena: ");
 		cadena = entrada.nextLine();
 		System.out.println(cadena.substring(1, cadena.length() -1));
+		entrada.close();
 				
 
 	}
+	
 
 }

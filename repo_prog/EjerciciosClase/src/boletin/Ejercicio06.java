@@ -9,7 +9,6 @@ public class Ejercicio06 {
 		  La casa de Juan es el número 25 
 		*/
 		
-		// TODO Auto-generated method stub
 		/*String cadena = "La casa de ";
 		System.out.println(cadena);
 		cadena += "Juan es ";

@@ -6,7 +6,7 @@ public class EjemploTiposApp {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		boolean bool = true;
 		int i = 1;
 		byte b = 5;

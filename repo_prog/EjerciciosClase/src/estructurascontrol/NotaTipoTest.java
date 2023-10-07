@@ -68,6 +68,7 @@ public class NotaTipoTest {
 		}
 		
 		System.out.println(msgResultado);
+		entrada.close();
 		
 	}
 
