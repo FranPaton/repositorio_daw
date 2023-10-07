@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Realiza un programa que resuelva una ecuación de segundo grado (del tipo ax2 + bx + c = 0)
 // Fórmula x = (-b +- ((b*b) - 4 * a * c)^(1/2)) / (2 * a)
 
-public class Ejercicio4 {
+public class Ejercicio04 {
 
 	public static void main(String[] args) {
 		

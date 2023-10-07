@@ -8,7 +8,7 @@ import java.util.*;
   de la pirámide está apuntando hacia arriba, hacia abajo o hacia la derecha.
   
  */
-public class Ejercicio9 {
+public class Ejercicio09 {
 
 	public static void main(String[] args) {
 		

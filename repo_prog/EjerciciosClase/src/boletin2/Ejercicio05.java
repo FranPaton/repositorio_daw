@@ -21,7 +21,7 @@ Meses con 31 días: ENERO(1), MARZO(3), MAYO(5), JULIO(7), AGOSTO(8), OCTUBRE(10
 Meses con 30 días: ABRIL(4), (JUNIO(6), SEPTIEMBRE(9), NOVIEMBRE(11)
  */
 
-public class Ejercicio5 {
+public class Ejercicio05 {
 
 	public static void main(String[] args) {
 

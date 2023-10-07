@@ -1,11 +1,11 @@
 package boletin2;
-import java.util.Scanner;
+import java.util.*;
 
 /*
 Escribe un programa que ordene tres números enteros introducidos por teclado.
 */
 
-public class Ejercicio8IF {
+public class Ejercicio08 {
 
 	public static void main(String[] args) {
 		
@@ -18,42 +18,12 @@ public class Ejercicio8IF {
 		b = entrada.nextInt();
 		System.out.println("Introduce tercer número: ");
 		c = entrada.nextInt();
-		if (a >= b) {
-			if (a >= c) {
-				max = a;
-				if (b >= c) {
-					med = b;
-					min = c;
-				} else {
-					med = c;
-					min = b;
-				}
-			} else {
-				max = c;
-				med = a;
-				min = b;				
-			}			
-		} else {  //a < b
-			if (b >= c) {
-				max = b;
-				if (a >= c) {
-					med = a;
-					min = c;
-				}
-				else {
-					med = c;
-					min = a;
-				}
-			} else { // c > b
-				max = c;
-				med = b;
-				min = a;
-			}
-		}
-
+		max = Math.max(a, Math.max(b, c));
+		min = Math.min(a, Math.min(b,c));
+		med = a + b + c - min - max;
+		
 		System.out.println(min + " < " + med + " < " + max);
 		entrada.close();
-		
 	}
 
 }

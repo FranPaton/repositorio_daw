@@ -2,7 +2,7 @@ package boletin2;
 
 import java.util.Scanner;
 
-public class Ejercicio5V2 {
+public class Ejercicio05V2 {
 
 	public static void main(String[] args) {
 		int dia = 1, mes = 1;

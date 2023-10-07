@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Realiza un programa que calcule el tiempo que tardará en caer un objeto desde una altura h.
 
-public class Ejercicio3 {
+public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		final double GRAVEDAD = 9.81;

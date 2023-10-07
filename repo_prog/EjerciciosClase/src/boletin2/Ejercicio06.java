@@ -5,7 +5,7 @@ import java.util.*;
 //los segundos que faltan para llegar a la medianoche
 
 
-public class Ejercicio6 {
+public class Ejercicio06 {
 
 	public static void main(String[] args) {
 		

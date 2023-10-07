@@ -19,7 +19,7 @@ Ejemplo 3:
 Por favor, introduzca el número de horas trabajadas durante la semana: 55
 El sueldo semanal que le corresponde es de 720 euros*/
 
-public class Ejercicio1 {
+public class Ejercicio01 {
 
 	public static void main(String[] args) {
 		
