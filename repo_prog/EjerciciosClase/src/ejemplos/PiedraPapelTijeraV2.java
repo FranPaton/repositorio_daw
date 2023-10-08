@@ -53,9 +53,7 @@ public class PiedraPapelTijeraV2 {
 						   );
 		
 		//Convertimos el número generado por el random en su string correspondiente, 0 = piedra, 1 = papel, 2 = tijera, que guardamos en compElige
-		compElige = (comp == 0 ? "piedra" : 
-				     comp == 1 ? "papel" : 
-				                 "tijera" );
+		compElige = (comp == 0 ? "piedra" :  comp == 1 ? "papel" : "tijera" );
 		System.out.println("\nComputadora elige:");
 		
 		System.out.println(comp == 0 ? piedraAscii :  //Muestra por pantalla la elección de la computadora, representada en código ASCII
