@@ -7,7 +7,11 @@ cualquiera. Después se pedirá al usuario que introduzca la contraseña, con 3
 intentos. Cuando acierte mostrará un mensaje de éxito. Si excede el número de
 intentos, avisa del error y termina el programa.
 */
+<<<<<<<< HEAD:repo_prog/EjerciciosClase/src/com/franpaton/tarea2/Ejercicio1ComprobarPassword.java
 public class Ejercicio1ComprobarPassword {
+========
+public class Ejercicio1 {
+>>>>>>>> 91cee1db989af9820715adc280f504604fb0f01c:repo_prog/EjerciciosClase/src/com/franpaton/tarea2/Ejercicio1.java
 
 	public static void main(String[] args) {
 		
