@@ -1,0 +1,62 @@
+package com.franpaton.tarea2;
+
+import java.util.Scanner;
+
+/*
+	Pedir números al usuario hasta que el usuario introduzca un -1. Al terminar, mostrará lo siguiente:
+	mayor número introducido
+	menor número introducido
+	suma de todos los números
+	media aritmética de todos los números
+	número -1 no contara como número.  
+ */
+
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+		
+		int num1 = 0, cont = 0, min = 0, max = 0;
+		double suma = 0, media = 0;
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Introduce un número (-1 para terminar): ");
+		if(!entrada.hasNextInt()) {
+			System.out.println("Error, introduce un número correcto.");
+		} else {
+			if(num1 != -1) {
+				num1 = entrada.nextInt();
+				min = num1;
+				max = num1;
+				suma = num1;
+				media = num1;
+				cont++;
+			}
+			do { 
+				System.out.println("Introduce otro número (-1 para terminar): ");
+				if (!entrada.hasNextInt()) {
+					System.out.println("Error, introduce un número correcto");
+				} else {
+					num1 = entrada.nextInt();
+					if (num1 != - 1) {
+						cont++;
+						if (num1 < min) {
+							min = num1;
+						}
+						if (num1 > max) {
+						max = num1;
+						}
+						suma += num1;
+						media = ((double)suma + num1) / 2; 
+						
+					}
+				}
+					
+			} while (num1 != -1);
+		}
+	
+		entrada.close();
+	}
+			
+}
+
+
