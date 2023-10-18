@@ -1,4 +1,5 @@
 package com.franpaton.tarea2;
+
 import java.util.*;
 
 /*. Escribe un programa con una cadena de texto que contenga una contraseña
@@ -6,7 +7,7 @@ cualquiera. Después se pedirá al usuario que introduzca la contraseña, con 3
 intentos. Cuando acierte mostrará un mensaje de éxito. Si excede el número de
 intentos, avisa del error y termina el programa.
 */
-public class ComprobarPassword {
+public class Ejercicio1ComprobarPassword {
 
 	public static void main(String[] args) {
 		
@@ -14,7 +15,7 @@ public class ComprobarPassword {
 		String entradaPassword = "";
 		Scanner entrada = new Scanner(System.in);
 		boolean passwordCorrecto = true;
-		int numIntentos = 3;
+		int numIntentos = 3; //Se puede modificar el valor de esta variable para permitir más o menos intentos sin tener que modificar nada más del programa
 		
 		do {
 			System.out.println("Introduce contraseña (" + numIntentos + " intentos) :");	
@@ -32,8 +33,8 @@ public class ComprobarPassword {
 					System.out.println("Error. Demasiados intentos, programa bloqueado.");
 				}		
 			}	
-		} while(numIntentos>0 && !passwordCorrecto) ;		
+		} while(numIntentos>0 && !passwordCorrecto);	
+		
+		entrada.close();
 	}
 }
-
-
