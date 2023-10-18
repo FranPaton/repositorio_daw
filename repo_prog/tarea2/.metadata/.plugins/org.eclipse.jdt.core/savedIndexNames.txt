@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Fran\Desktop\DAW\Programacion\tarea2\.metadata\.plugins\org.eclipse.jdt.core
-3413725848.index
-1994598189.index
-1865797976.index
