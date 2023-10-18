@@ -39,12 +39,11 @@ public class Ejercicio13 {
                         + "\n   2. Papel"
                         + "\n   3. Tijera" );
         
-        if (entrada.hasNextInt()) { 
-            jugadorElige = entrada.nextInt() - 1;
-            if (jugadorElige >= 0 && jugadorElige <= 2) {
-                entradaCorrecta = true;
-            }             
-        }
+        jugadorElige = entrada.nextInt() - 1;
+        if (jugadorElige >= 0 && jugadorElige <= 2) {
+            entradaCorrecta = true;
+        }             
+       
         if (entradaCorrecta) {
             System.out.println("\nJugador elige " + jugadorElige + ". Computadora elige " + compElige +"\n");
 

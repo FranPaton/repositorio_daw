@@ -14,18 +14,14 @@ public class Ejercicio11 {
         Scanner entrada = new Scanner(System.in);
         
         System.out.println("Introduce un número: ");
-        if (entrada.hasNextInt()) {
-            num = entrada.nextInt();
-            numString = String.valueOf(num);
-            if (numString.length() <= 5) {
-                System.out.println("La primera cifra es " + numString.charAt(0));
-            } else {
-                System.out.println("Error. Introduce un número con cinco cifras como máximo");
-            }
-            
+        num = entrada.nextInt();
+        numString = String.valueOf(num);
+        if (numString.length() <= 5) {
+              System.out.println("La primera cifra es " + numString.charAt(0));
         } else {
-            System.out.println("Error. Introduce un número entero.");
+              System.out.println("Error. Introduce un número con cinco cifras como máximo");
         }
+        
         entrada.close();
     }
 }

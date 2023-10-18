@@ -13,20 +13,17 @@ public class Ejercicio12 {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Introduce un número entero con cinco cifras como máximo: ");
-        if(entrada.hasNextInt()){
-            num = entrada.nextInt();
-            if (num < 0) {
-                num *= -1;
-            }
-            numString = String.valueOf(num);
-            if(numString.length()<=5) {
-                System.out.println("El número " + num + " tiene " + numString.length() + " cifras");
-            } else {
-                System.out.println("Error. Sólo se permiten números de cinco cifras como máximo.");
-            }
-        } else {
-            System.out.println("Error. Introduce un número entero.");
+        num = entrada.nextInt();
+        if (num < 0) {
+            num *= -1;
         }
+        numString = String.valueOf(num);
+        if(numString.length()<=5) {
+            System.out.println("El número " + num + " tiene " + numString.length() + " cifras");
+        } else {
+            System.out.println("Error. Sólo se permiten números de cinco cifras como máximo.");
+        }
+        
         entrada.close();
     }
 }

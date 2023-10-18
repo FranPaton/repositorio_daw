@@ -27,8 +27,13 @@ public class Ejercicio3Calculadora {
 		boolean opcionCorrecta = false;
 
 		do {
-			System.out.println("\n~~~~~~~~~~~~~~| CALCULADORA |~~~~~~~~~~~~~~\n" + "1 - Suma\n" + "2 - Resta\r\n"
-					+ "3 - Multiplicación\n" + "4 – División\n" + "5 – Potencia\n" + "0 - Salir del programa\n"
+			System.out.println("\n~~~~~~~~~~~~~~| CALCULADORA |~~~~~~~~~~~~~~\n" 
+					+ "1 - Suma\n"
+					+ "2 - Resta\r\n"
+					+ "3 - Multiplicación\n"
+					+ "4 – División\n" 
+					+ "5 – Potencia\n" 
+					+ "0 - Salir del programa\n"
 					+ "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 			System.out.println("Introduce una opción (1-5): ");
 
@@ -40,7 +45,7 @@ public class Ejercicio3Calculadora {
 					System.out.println("Introduce primer número: ");
 					num1 = entrada.nextInt();
 					System.out.println("Introduce segundo número:");
-					// se comprueba que num2 es un número entero
+					
 					num2 = entrada.nextInt();
 					System.out.println("Resultado: " + num1 + " + " + num2 + " = " + (num1 + num2));
 

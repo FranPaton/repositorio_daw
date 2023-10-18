@@ -19,27 +19,30 @@ public class Ejercicio2AdivinaNumero {
 		int numIntentos = 5;
 		Scanner entrada = new Scanner(System.in);
 		boolean encontrado = false;
-
+		numRandom = 50;
 		do {
 			System.out.println("Introduce un número del 1 al 100 (" + numIntentos + " intentos): ");
 			numEntrada = entrada.nextInt();
 			if (numEntrada >= 1 && numEntrada <= 100) {
-
-				if (numRandom < numEntrada) { // si el número es menor
+				numIntentos--;
+				if (numIntentos> 0) {
+					if (numRandom < numEntrada) { // si el número es menor
 					System.out.println("Menor.");
 
-				} else if (numRandom > numEntrada) { // si el número es mayor
-					System.out.println("Mayor.");
-
-				} else { // si no es mayor ni menor es que es igual y se ha encontrado el número
-					encontrado = true;
-					System.out.println("Ganaste, el número era " + numEntrada);
-				}
+					} else if (numRandom > numEntrada) { // si el número es mayor
+						System.out.println("Mayor.");
+	
+					} else { // si no es mayor ni menor es que es igual y se ha encontrado el número
+						encontrado = true;
+						System.out.println("Ganaste, el número era " + numEntrada);
+					}
+				} 
+				
 			} else { // si se introduce un número menor que 1 y mayor que 100
 				System.out.println("Error, introduce un número entero entre 1 y 100");
 			}
 
-			numIntentos--;
+			
 
 		} while (numIntentos > 0 && !encontrado);
 

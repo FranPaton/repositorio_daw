@@ -18,25 +18,37 @@ public class Ejercicio4PedirNumeros {
 		int num = 0, cont = 0, min = 0, max = 0, suma = 0;
 		double media = 0;
 		Scanner entrada = new Scanner(System.in);
+		String numIntroducidos = "";
 
 		do {
 			System.out.println("Introduce número (-1 para terminar): ");
 			num = entrada.nextInt();
 			if (num != -1) {
-				if (cont == 0) {
+				cont++;
+				if (cont == 1) {
 					min = max = num;
+					numIntroducidos = "" + num;
 				} else if (num < min) {
 					min = num;
 				} else if (num > max) {
 					max = num;
 				}
-				suma += num;
-				cont++;
+				suma += num;		
 				media = (double) suma / cont;
+				if (cont != 1) {
+					numIntroducidos += ", " + num;
+				}
+				
+				
 			}
 		} while (num != -1);
 
-		System.out.println("\nMin: " + min + "\nMax: " + max + "\nSuma: " + suma + "\nMedia: " + media);
+		if(cont ==0) {
+			System.out.println("No se ha introducido ningún número");
+		} else {
+			System.out.println("Números: " + numIntroducidos);
+			System.out.println("\nMin: " + min + "\nMax: " + max + "\nSuma: " + suma + "\nMedia: " + media);
+		}
 
 		entrada.close();
 	}

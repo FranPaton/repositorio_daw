@@ -13,15 +13,10 @@ public class Ejercicio10 {
         String numString;
 
         System.out.println("Introduce un número: ");
-        
-        if (entrada.hasNextInt()) {
-             num = entrada.nextInt();
-             numString = String.valueOf(num);
-             System.out.println("La última cifra es: "+ numString.charAt(numString.length()-1));           
-        }
-        else {
-            System.out.println("Error. Introduce un número entero.");
-        }
+        num = entrada.nextInt();
+        numString = String.valueOf(num);
+        System.out.println("La última cifra es: "+ numString.charAt(numString.length()-1));           
+      
        
         entrada.close();
 
