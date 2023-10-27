@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="expresiones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="expresion" maxOccurs="unbounded">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="Capitulo[0-9]" />
+                            <xs:pattern value="Capitulo[1-9]?[0-9]" />
+                            <xs:pattern value="Capitulo[1-9][0-9]?" />
+                            <xs:pattern value="(Capitulo )([0]|[1-9][0-9]*)" />
+                            <xs:pattern value="[^0-9][Z]" />
+                            <xs:pattern value="ABB+C"/>
+                            <xs:pattern value="RS{2,}[3-8]?"/>
+                            <xs:pattern value="COD[0-9]{3}.+"/>
+                            
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

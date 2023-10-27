@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expresiones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejerc12.xsd">
+    <expresion>Capitulo0</expresion>
+    <expresion>Capitulo10</expresion>
+    <expresion>Capitulo10</expresion>
+    <expresion>Capitulo 0</expresion>
+    <expresion>ZZ</expresion>
+    <expresion>ABBC</expresion>
+    <expresion>RSSSSSS7</expresion>
+    <expresion>COD122assad</expresion>
+
+</expresiones>

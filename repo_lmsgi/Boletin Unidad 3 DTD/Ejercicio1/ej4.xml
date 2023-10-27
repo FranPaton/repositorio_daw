@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mesa [
+   <!ELEMENT mesa ANY>
+   <!ELEMENT material (#PCDATA)>
+   <!ELEMENT color (#PCDATA)>
+]>
+
+<!-- <mesa>La mesa de <material>madera es de color <color>marrón</color></material>.</mesa> -->
+
+<mesa>
+    La mesa de <material>madera</material> es de color <color>marrón</color>.
+</mesa>
