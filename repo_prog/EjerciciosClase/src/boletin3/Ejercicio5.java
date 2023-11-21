@@ -2,7 +2,7 @@ package boletin3;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Month;
+//import java.time.Month;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -93,7 +93,6 @@ public class Ejercicio5 {
 		System.out.println("Año hoy: " + calHoy.get(Calendar.YEAR));
 		System.out.println("Año proximo cumpleaños: " + calCumple.get(Calendar.YEAR));
 		// Para obtener el año de una fecha se opera así
-		int anioHoy = calHoy.get(Calendar.YEAR);
 		
 		// TODO: TERMINAR EL EJERCICIO
 		return (calCumple.getTime());

@@ -25,7 +25,7 @@ public class Ejercicio6 {
 	public static void main(String[] args) {
 		int opcionMenu = 0;
 		Scanner scan = new Scanner(System.in);
-		String cadena = "";
+		//String cadena = "";
 		
 		do {
 			System.out.println("\n\nIntroduce tipo del valor:"

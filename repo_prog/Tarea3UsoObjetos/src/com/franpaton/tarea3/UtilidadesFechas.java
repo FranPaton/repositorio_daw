@@ -1,35 +1,14 @@
-package boletin3;
-
-<<<<<<< HEAD
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-public class FuncionesFechas {
-
-	public static boolean fechaCorrecta (String fechaNacStr) throws Exception{
-		Date fechaHoy = new Date();
-		SimpleDateFormat fechaFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date fechaNacimiento = null;
-		//Date hoy = new Date();
-		try {
-			fechaNacimiento = fechaFormat.parse(fechaNacStr);
-		} catch (ParseException e) {
-			throw new Exception("El formato no es el adecuado, por favor introduce una fecha correcta.");
-		}
-		System.out.println("Hola" + fechaNacimiento);
-		return(true);
-	}
-}
-=======
+package com.franpaton.tarea3;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class FuncionesFechas {
+public class UtilidadesFechas {
 	
+	//El metodo obtenerFecha es un metodo de apoyo que devuelve una fecha tipo Date según la cadena 'fechaStr',
+	//que es una fecha en formato String con el formato 'formatoFechaStr'
 	public static Date obtenerFecha(String fechaStr, String formatoFechaStr) throws Exception {
 		SimpleDateFormat dateFormat = new SimpleDateFormat(formatoFechaStr);
         Date fechaDate;
@@ -58,10 +37,7 @@ public class FuncionesFechas {
         
         return(calFechaHoy.get(Calendar.YEAR) - calFechaNac.get(Calendar.YEAR));
     }
-
 	
-	
-	// Devuelve si un año en objeto Date es bisiesto. Un año es bisiesto
 	public static boolean esAnioBisiesto (String fechaStr) throws Exception{
 		boolean esBisiesto = false;
 		String formatoFecha = "dd/MM/yyyy";
@@ -76,19 +52,10 @@ public class FuncionesFechas {
 		return(esBisiesto);	
 	}
 	
-	public static int obtenerMes (Date fechaDate) throws Exception {
-	
+	public static int obtenerMes (Date fechaDate){
 		Calendar calFecha = Calendar.getInstance();
 		calFecha.setTime(fechaDate);
 		return(calFecha.get(Calendar.MONTH));
 	}
-	
-	
-	
-	
-	
-	
+
 }
-
-
->>>>>>> 62dfeecb9f8a1ebbda7cbb42251273ed8d251fb6
