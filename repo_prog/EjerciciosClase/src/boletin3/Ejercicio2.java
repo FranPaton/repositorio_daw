@@ -59,7 +59,7 @@ public static void main(String[] args) {
 				+ "\n4. Mostrar por pantalla"
 				+ "\n5. Salir");
 		opcionMenu = entrada.nextInt();
-		//entrada.close();
+		entrada.close();
 		return (opcionMenu);
 					
 	}

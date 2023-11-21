@@ -24,7 +24,7 @@ public class Ejercicio3Calculadora {
 
 		int opcionMenu = -1, num1 = 0, num2 = 0;
 		Scanner entrada = new Scanner(System.in);
-		boolean opcionCorrecta = false;
+		//boolean opcionCorrecta = false;
 
 		do {
 			System.out.println("\n~~~~~~~~~~~~~~| CALCULADORA |~~~~~~~~~~~~~~\n" 

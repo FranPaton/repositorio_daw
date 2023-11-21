@@ -56,6 +56,7 @@ public class CalculadoraDoWhile {
 
 
 	}while(menu>=1&&menu<=4);
+	entrada.close();
 }
 
 }

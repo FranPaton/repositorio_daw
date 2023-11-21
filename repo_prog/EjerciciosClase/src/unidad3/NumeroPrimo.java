@@ -7,7 +7,7 @@ public class NumeroPrimo {
 	
 	
 	public static void main(String[] args) {
-		int i = 2, num;
+		int num;
 		Scanner entrada = new Scanner (System.in);
 		boolean esPrimo = true;
 		
