@@ -237,6 +237,32 @@ public class FuncionesMatematicas {
 		System.out.print((monedas2Cent != 0 ?  "\nMonedas de 2 céntimos : " + monedas2Cent: ""));
 		System.out.print((monedas1Cent != 0 ?  "\nMonedas de 1 céntimo : " + monedas1Cent: ""));					
 	}
-		
 	
-}
+	public static boolean esPar(int num) {
+		return(num % 2 == 0);
+	}
+	
+	public static boolean esPar(long num) {
+		return(num % 2 == 0);
+	}
+
+	public static long[] getRandomArray(int longArray, long min, long max) {
+		long[] arrayNumeros = new long[longArray];
+		for(int i=0; i<arrayNumeros.length-1; i++) {
+			long num = (long)(Math.random() * (max - min + 1) + min);
+			arrayNumeros[i] = num;	
+		}
+		return(arrayNumeros);
+	}
+	
+	/*public static int[] getRandomArray(int longArray, int min, int max) {
+		int[] arrayNumeros = new int[longArray];
+		for(int i=0; i<arrayNumeros.length-1; i++) {
+			int num = (int)(Math.random() * (max - min + 1) + min);
+			arrayNumeros[i] = num;	
+		}
+		return(arrayNumeros);
+	}*/
+		
+}	
+

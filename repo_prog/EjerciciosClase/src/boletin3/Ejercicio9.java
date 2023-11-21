@@ -1,21 +1,5 @@
 package boletin3;
 
-<<<<<<< HEAD
-public class Ejercicio9 {
-
-	public static void main(String[] args) {
-		String fechaNac = "15/10/1";
-		try {
-			FuncionesFechas.fechaCorrecta(fechaNac);
-			System.out.printf("%s es correcta", fechaNac);
-			
-		} catch (Exception e) {
-			System.out.println("\n\n" + e.getMessage());
-		}
-
-	}
-
-=======
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -78,11 +62,7 @@ public class Ejercicio9 {
 					+ "\nMes: " + (mes + 1));			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		}
-		
-		
-		
+		}			
 		
 	}
->>>>>>> 62dfeecb9f8a1ebbda7cbb42251273ed8d251fb6
 }

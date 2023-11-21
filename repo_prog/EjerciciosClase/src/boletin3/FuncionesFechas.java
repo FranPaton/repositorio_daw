@@ -1,28 +1,5 @@
 package boletin3;
 
-<<<<<<< HEAD
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-public class FuncionesFechas {
-
-	public static boolean fechaCorrecta (String fechaNacStr) throws Exception{
-		Date fechaHoy = new Date();
-		SimpleDateFormat fechaFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date fechaNacimiento = null;
-		//Date hoy = new Date();
-		try {
-			fechaNacimiento = fechaFormat.parse(fechaNacStr);
-		} catch (ParseException e) {
-			throw new Exception("El formato no es el adecuado, por favor introduce una fecha correcta.");
-		}
-		System.out.println("Hola" + fechaNacimiento);
-		return(true);
-	}
-}
-=======
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -81,14 +58,7 @@ public class FuncionesFechas {
 		Calendar calFecha = Calendar.getInstance();
 		calFecha.setTime(fechaDate);
 		return(calFecha.get(Calendar.MONTH));
-	}
-	
-	
-	
-	
-	
+	}	
 	
 }
 
-
->>>>>>> 62dfeecb9f8a1ebbda7cbb42251273ed8d251fb6
