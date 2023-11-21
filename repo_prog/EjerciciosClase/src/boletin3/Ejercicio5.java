@@ -22,16 +22,17 @@ public class Ejercicio5 {
 		Date hoy = new Date();
 		Date cumple = new Date();
 		boolean fechaCorrecta = false;
-		String fechaCumpleaniosStr ="15/10/1981";
+		String fechaCumpleaniosStr ="15/10";
 		while (!fechaCorrecta) {
-			/*System.out.print("Introduce tu fecha de cumpleaños con formato (dd/MM/yyyy): ");
-			String fechaCumpleaniosStr = scan.nextLine();*/
+			System.out.print("Introduce tu fecha de cumpleaños con formato (dd/MM/yyyy): ");
+			String fechaCumpleaniosStr_ = scan.nextLine();
 			
 			try {
-				cumple = obtenerFechaProxCumpleanios(fechaCumpleaniosStr);
+				cumple = obtenerFechaProxCumpleanios(fechaCumpleaniosStr_);
 				fechaCorrecta = true;
 			} catch (Exception e) {
 				System.out.print(e.getMessage());
+				fechaCorrecta = false;
 			}
 		}
 		scan.close();
@@ -96,7 +97,6 @@ public class Ejercicio5 {
 		
 		// TODO: TERMINAR EL EJERCICIO
 		return (calCumple.getTime());
-
 	}
 
 }
