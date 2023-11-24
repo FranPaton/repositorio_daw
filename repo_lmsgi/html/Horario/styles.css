@@ -18,6 +18,8 @@ caption {
 
 th:not(:first-child) {
     border-bottom: 2px solid;
+    width: 110px;
+    background-color: rgb(128, 224, 208);
 }
 
 table {
@@ -32,9 +34,10 @@ table {
 td {
     text-align: center;
     padding: 3px;
+    position: relative;
 }
 
-td:first-child{
+td:first-child, th:first-child{
     border-right: 2px solid;
     background-color: #ddc0c0;
 }
@@ -52,16 +55,44 @@ td:first-child {
     padding: 3px;
 }
 
-th {
-    width: 120px;
-}
+
 .lmsgi {
     background-color: #ffe69c;
+    position: relative
+}
+
+.lmsgi:hover {
+   font-size: 0;
+}
+
+.lmsgi:hover::after {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ;
+    content: 'Profesor: Juanfran';
 }
 
 .bbdd {
     background-color: #dbdbdb;
+    position: relative;
 }
+
+.bbdd:hover {
+    font-size: 0;
+ }
+ 
+ .lmsgi:hover::after {
+     font-size: 15px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     ;
+     content: 'Profesor: Teo';
+ }
 
 .entornos {
     background-color: #bdd7ee;
