@@ -56,59 +56,41 @@ td:first-child {
 }
 
 
-.lmsgi {
-    background-color: #ffe69c;
-    position: relative
-}
+.lmsgi { background-color: #ffe69c; }
 
-.lmsgi:hover {
-   font-size: 0;
-}
+.programacion { background-color: #f4af85; }
 
-.lmsgi:hover::after {
+.bbdd { background-color: #dbdbdb; }
+
+.entornos { background-color: #bdd7ee; }
+
+.sistemas { background-color: #8eaadc; }
+
+.fol { background-color: #a9d08f; }
+
+.recreo { background-color: #fde34c; }
+
+
+.lmsgi:hover, .programacion:hover, .bbdd:hover, .sistemas:hover, .entornos:hover, .fol:hover {
+    font-size: 0;
+ }
+
+.lmsgi:hover::after, .programacion:hover::after, .bbdd:hover::after, .sistemas:hover::after, .fol:hover::after, .entornos:hover::after {
     font-size: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    ;
-    content: 'Profesor: Juanfran';
 }
 
-.bbdd {
-    background-color: #dbdbdb;
-    position: relative;
-}
+.programacion:hover::after, .lmsgi:hover::after { content: 'Profesor: Juanfran'}
 
-.bbdd:hover {
-    font-size: 0;
- }
+.bbdd:hover::after { content: 'Profesor: Teo'; }
+
+.entornos:hover::after { content: 'Profesor: Alejandro'; }
  
- .lmsgi:hover::after {
-     font-size: 15px;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     ;
-     content: 'Profesor: Teo';
- }
+.sistemas:hover::after { content: 'Profesor: David'; }
 
-.entornos {
-    background-color: #bdd7ee;
-}
-.sistemas {
-    background-color: #8eaadc;
-}
-.programacion {
-    background-color: #f4af85;
-}
+.fol:hover::after { content: 'Profesor: Cintia'; }
 
-.fol {
-    background-color: #a9d08f;
-}
-
-.recreo {
-    background-color: #fde34c
-}
 
