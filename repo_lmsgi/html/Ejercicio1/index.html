@@ -1,0 +1,73 @@
+<!-- Ejercicio propuesto
+Crea una página con la siguiente estructura.
+En la parte superior debe haber dos cajas. 
+Una de ellas, a la izquierda, ocupa el 33% y contiene el lema. 
+La otra, a la derecha, contiene enlaces y ocupa el 66%.
+En la parte central 3 cajas. 
+La de la izquierda contiene publicidad y ocupa el 25%.
+La central tiene el contenido y ocupa el 50%
+la de la derecha tiene más publicidad y ocupa el 25%.
+En la parte de abajo hay una barra que no se mueve nunca y que ocupa el 100%. 
+Contiene el mensaje de copyright de la empresa.
+Un posible HTML sería el siguiente:
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <meta charset="utf-8" />
+    <title>Ej_01_a posicionamiento con float y clear</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="lema">
+        <h1 id="bienvenida">Este es el lema de la página...</h1>
+      </div>
+      <div id="enlaces">
+        <ul>
+          <li><a href="#">enlace 1</a></li>
+          <li><a href="#">enlace 2</a></li>
+          <li><a href="#">enlace 3</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <main>
+        <div id="publi1" class="float-left">
+          <p>
+            Publicidad1: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Animi maiores, ad perferendis, distinctio libero, molestiae impedit ex
+            accusantium amet numquam quasi eligendi. Exercitationem incidunt unde
+            cum ratione harum ex molestias!
+          </p>
+        </div>
+        <div id="contenido" class="float-left">
+          <p>
+            Contenido: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur, suscipit velit eius earum numquam deleniti iste commodi
+            error quae ipsa temporibus provident, vitae asperiores. Distinctio ea
+            modi facere eveniet ex! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Autem magnam, voluptates earum ipsum minima ea
+            molestias aliquam iure dolores magni asperiores delectus rem, sequi enim
+            quas, veniam dolorum ab! Quasi! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Unde pariatur aliquam nesciunt inventore est totam
+            necessitatibus eaque, id, ratione deserunt, fugiat ipsam voluptates
+            veniam dicta. Sequi dolorem magnam modi distinctio.
+          </p>
+        </div>
+        <div id="publi2" class="float-right">
+          <p>
+            Publicidad2: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium voluptatibus quia ex, enim, distinctio doloribus quos vero
+            maiores laudantium praesentium consectetur sint error minus debitis
+            facere ipsum deserunt, obcaecati earum.
+          </p>
+        </div>
+    </main>
+ 
+    <footer>
+      <div id="copyright">&copy; IES Trafalgar 2023</div>
+    </footer>
+  </body>
+</html>

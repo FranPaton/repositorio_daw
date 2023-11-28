@@ -1,0 +1,72 @@
+body {
+  margin:0px;
+  background-color: #c4e7d6;
+}
+
+header {
+  display: flow-root;
+}
+
+
+#lema {
+  float: left;
+  width: 33%;
+  background-color: darkslategray;
+  height:100px;
+}
+
+#enlaces {
+    float:left;
+    width: 67%;
+    background-color: cadetblue;
+    height: 100px;
+}
+
+main {  
+    margin: 10px;
+    display: flow-root;
+}
+
+#publi1,
+#publi2 {
+  max-width: 25%;
+}
+
+#contenido {
+  width:45%;
+  min-width: 45vw;
+ margin-right: 10px;
+  margin-left: 10px;
+  text-align: justify;
+}
+.float-left {
+  float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+#enlaces ul {
+  list-style-type: none;
+}
+
+footer {
+    color: #fff;
+    width: 100vw;
+    margin: auto;
+  height: 40px;
+  position:fixed;
+  bottom: 0;
+  background-color: #646464;
+  text-align: center;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40px;
+  
+}
+
