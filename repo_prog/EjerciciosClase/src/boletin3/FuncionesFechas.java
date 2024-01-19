@@ -13,7 +13,7 @@ public class FuncionesFechas {
         try {
             fechaDate = dateFormat.parse(fechaStr);
         } catch (ParseException e) {
-        	String strException = "Error, la fecha no tiene el formato correcto" + formatoFechaStr;
+        	String strException = "Error, la fecha no tiene el formato correcto: " + formatoFechaStr;
         	throw new Exception (strException);
         }
 		return(fechaDate);
@@ -59,6 +59,26 @@ public class FuncionesFechas {
 		calFecha.setTime(fechaDate);
 		return(calFecha.get(Calendar.MONTH));
 	}	
+	
+	public static Date sumarDias(String fechaStr, int numDias) throws Exception{
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		Date fechaAntigua = dateFormat.parse(fechaStr);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(fechaAntigua);
+		cal.add(Calendar.DAY_OF_MONTH, numDias);
+		return(cal.getTime());
+	}
+	
+	public static Date restarDias(String fechaStr, int numDias) throws Exception{
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		Date fecha = new Date();
+		fecha = sdf.parse(fechaStr);
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(fecha);
+		cal.add(Calendar.DAY_OF_MONTH, -numDias);
+		return(cal.getTime());
+	}
+		
 	
 }
 

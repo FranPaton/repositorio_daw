@@ -62,7 +62,32 @@ public class Ejercicio9 {
 					+ "\nMes: " + (mes + 1));			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		}			
+		}	
+		
+		try {
+			String fechaStr = "15/10/1984";
+			String fechaFormato = "dd/MM/yyyy";
+			int numDias = 20;
+			//Date fechaDate = FuncionesFechas.obtenerFecha(fechaStr, fechaFormato);
+			System.out.println("\n\n-= Obtener mes de una fecha =-"
+					+ "\nFecha: " + fechaStr 
+					+ "\nFecha mas " + numDias + " dias: " + FuncionesFechas.formatearFecha(FuncionesFechas.sumarDias(fechaStr, numDias), "dd/MM/yyyy")); 			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			String fechaStr = "15/10/1984";
+			String fechaFormato = "dd/MM/yyyy";
+			int numDias = 10;
+			//Date fechaDate = FuncionesFechas.obtenerFecha(fechaStr, fechaFormato);
+			System.out.println("\n\n-= Obtener mes de una fecha =-"
+					+ "\nFecha: " + fechaStr 
+					+ "\nFecha menos " + numDias + " dias: " + FuncionesFechas.formatearFecha(FuncionesFechas.restarDias(fechaStr, numDias), "dd/MM/yyyy")); 			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}	
+		
 		
 	}
 }

@@ -66,8 +66,8 @@ public class Ejercicio7 {
 		
 		//QUITA LOS n PRIMEROS DIGITOS DE UN NUMERO
 		try {
-			int numQuitar = 102130;
-			int digitosQuitar =3;
+			int numQuitar = 102133450;
+			int digitosQuitar =4;
 			//ncionesMatematicas.quitaPorDelante(numQuitar, digitosQuitar);
 			System.out.printf("\n\n%d quitando %d números por delante = %d", numQuitar, digitosQuitar, FuncionesMatematicas.quitaPorDelante(numQuitar, digitosQuitar));
 		} catch (Exception e) {
@@ -133,7 +133,12 @@ public class Ejercicio7 {
 			
 		}
 		
-		
+		System.out.println("\n\n");
+		int numRandom;
+		for (int i = 0; i <= 50 ; i++) {
+			numRandom = (int)(Math.random() * (101)) -50;
+			System.out.print(numRandom + " ");	
+		}
 		
 	}
 

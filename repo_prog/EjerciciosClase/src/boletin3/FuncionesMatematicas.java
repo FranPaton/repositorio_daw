@@ -1,5 +1,7 @@
 package boletin3;
 
+import java.awt.Rectangle;
+
 /*
  */
 public class FuncionesMatematicas {
@@ -119,7 +121,7 @@ public class FuncionesMatematicas {
 			throw new Exception ("Error, se intentan quitar más digitos que la longitud del número");
 		}
 		
-		auxDelante = (num / (int)potencia(10, (longNum - digitos))) * (int)potencia(10,(longNum - digitos));
+		auxDelante = (num / (int)potencia(10, longNum - digitos)) * (int)potencia(10,(longNum - digitos));
 		//System.out.println("\n\n" + (num - auxDelante));
 		result = num - auxDelante;
 		return(result);		
@@ -254,6 +256,8 @@ public class FuncionesMatematicas {
 		}
 		return(arrayNumeros);
 	}
+	
+	
 	
 	/*public static int[] getRandomArray(int longArray, int min, int max) {
 		int[] arrayNumeros = new int[longArray];
