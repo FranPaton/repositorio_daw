@@ -16,24 +16,31 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		long min = 0, max = 20, numOld, numNew;
-		
+		String[] arrayStrings = new String[3];
+		System.out.println("Array strings 1"+ arrayStrings[0]);
 		int longArray = 100, contCambiados = 0;
 		Scanner scn = new Scanner(System.in);
 		System.out.print("Introduce valor a cambiar: ");
 		numOld = scn.nextLong();
 		System.out.print("Introduce nuevo valor: ");
 		numNew = scn.nextLong();
-		long[] arrayNumeros = FuncionesMatematicas.getRandomArray(longArray, min, max);	
+		long[] arrayNumeros = FuncionesMatematicas.getRandomArrayLong(longArray, min, max);	
+		for(int i=0; i<=longArray-1; i++) {
+			System.out.printf("%d ", arrayNumeros[i]);
+		}
+		System.out.println("");
 		for (int i=0; i<=longArray-1; i++) {
-			if(arrayNumeros[i] != numNew) {
-				System.out.printf("%d ",arrayNumeros[i]);
-			} else {
-				System.out.printf("\"%d\" ", arrayNumeros[i]);
+			if(arrayNumeros[i] == numOld) {
+				arrayNumeros[i] = numNew;
+				System.out.printf("\"%d\" ",arrayNumeros[i]);
 				contCambiados++;
+			} else {
+				System.out.printf("%d ", arrayNumeros[i]);
+				
 			}
 		}
 		System.out.println("\nNúmeros cambiados: " + contCambiados);
-
+		scn.close();
 	}
 
 }

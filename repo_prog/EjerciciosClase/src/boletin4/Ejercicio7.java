@@ -111,9 +111,8 @@ public class Ejercicio7 {
 	public static boolean comprobarGanador(char[][] arrayTablero, int fila, int jugada, char fichaJugador) {
 		boolean ganador = false;
 		//Comprobar columna hacia abajo para jugador 1
-		if (fila >= 3) {
-			
-			int i = fila, cont = 0;
+		
+			int i = fila, cont = 0, j = 0;
 			if (arrayTablero[i][jugada] == fichaJugador)
 				while (i >= 0 && arrayTablero[i][jugada] == fichaJugador && cont <= 4) {
 					cont++;
@@ -122,17 +121,26 @@ public class Ejercicio7 {
 			if (cont == 4) {
 				ganador = true;
 			}
+			
 			//Comprobar diagonal abajo derecha
-			if(jugada <= 3 && !ganador) {
-				i = fila;
-				int j = jugada;
+
+			if(!ganador) {
 				cont = 0;
+				i = 6 - fila - 1; 
+				j = 7 - jugada - 1;
 				if(arrayTablero[i][j] == fichaJugador) {
 					while(i>=0 && j<=6 && arrayTablero[i][j] == fichaJugador && cont <= 4) {
 						i--;
 						j++;
 						cont++;
 					}
+					
+					while(i>=0 && j<=6 && arrayTablero[i][j] == fichaJugador && cont <= 4) {
+						i--;
+						j++;
+						cont++;
+					}
+					
 				}
 				if (cont == 4) {
 					ganador = true;
@@ -140,7 +148,7 @@ public class Ejercicio7 {
 			}
 			
 			//Comprobar diagonal abajo izquierda
-			if(jugada >= 3 && !ganador) {
+			if(!ganador) {
 				i = fila;
 				int j = jugada;
 				cont = 0;
@@ -154,15 +162,12 @@ public class Ejercicio7 {
 				if (cont == 4) {
 					ganador = true;
 				}	
-			}
+			} 
 			
-			
-			
-		} else {  // i<3
-			int cont = 0;
 			//Comprobar diagonal arriba derecha
-			if(jugada <= 3 && !ganador) {
-				int i = fila;
+			if(!ganador) {
+				cont = 0;
+				i = fila;
 				int j = jugada;
 				cont = 0;
 				if(arrayTablero[i][j] == fichaJugador) {
@@ -178,8 +183,8 @@ public class Ejercicio7 {
 			}
 			
 			//Comprobar diagonal arriba izquierda
-			if(jugada >= 3 && !ganador) {
-				int i = fila;
+			if(!ganador) {
+				i = fila;
 				int j = jugada;
 				cont = 0;
 				if(arrayTablero[i][j] == fichaJugador) {
@@ -195,10 +200,11 @@ public class Ejercicio7 {
 			}
 			
 			
-		}
-		//Comprobar fila hacia la derecha para jugador 1
+		
+		//Comprobar fila hacia la derecha
 		if(jugada <= 3 && !ganador) {
-			int i = jugada, cont = 0;
+			i = jugada;
+			cont = 0;
 			if (arrayTablero[fila][i] == fichaJugador)
 				while (i <=6 && arrayTablero[fila][i] == fichaJugador && cont <= 4) {
 					cont++;
@@ -208,9 +214,10 @@ public class Ejercicio7 {
 				ganador = true;
 			}
 		}
-		//Comprobar fila hacia la izquierda para jugador 1
+		//Comprobar fila hacia la izquierda
 		if(jugada >= 3 &&!ganador) {
-			int i = jugada, cont = 0;
+			i = jugada;
+			cont = 0;
 			if (arrayTablero[fila][i] == fichaJugador)
 				while (i >= 0 && arrayTablero[fila][i] == fichaJugador && cont <= 4) {
 					cont++;
