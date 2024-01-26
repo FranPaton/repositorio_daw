@@ -150,7 +150,7 @@ public class Ejercicio7 {
 			//Comprobar diagonal abajo izquierda
 			if(!ganador) {
 				i = fila;
-				int j = jugada;
+				j = jugada;
 				cont = 0;
 				if(arrayTablero[i][j] == fichaJugador) {
 					while(i>=0 && j>=0 && arrayTablero[i][j] == fichaJugador && cont <= 4) {
@@ -168,7 +168,7 @@ public class Ejercicio7 {
 			if(!ganador) {
 				cont = 0;
 				i = fila;
-				int j = jugada;
+				j = jugada;
 				cont = 0;
 				if(arrayTablero[i][j] == fichaJugador) {
 					while(i<=5 && j<=6 && arrayTablero[i][j] == fichaJugador && cont <= 4) {
@@ -185,7 +185,7 @@ public class Ejercicio7 {
 			//Comprobar diagonal arriba izquierda
 			if(!ganador) {
 				i = fila;
-				int j = jugada;
+				j = jugada;
 				cont = 0;
 				if(arrayTablero[i][j] == fichaJugador) {
 					while(i<=5 && j>=0 && arrayTablero[i][j] == fichaJugador && cont <= 4) {

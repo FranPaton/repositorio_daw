@@ -11,22 +11,17 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		int longArray = 20;
-<<<<<<< HEAD
 		long [] arrayNumeros = FuncionesMatematicas.getRandomArrayLong(longArray, 0, 100);
 		long[] arrayPares = new long[longArray];
 		long[] arrayImpares = new long[longArray];
 		//long[] arrayNumeros = {1,3,5,7,9,11};
-=======
-		long [] arrayNumeros = FuncionesMatematicas.getRandomArray(longArray, 0, 100);
 		//long[] arrayNumeros = {1,2,3,4,5,6,7,8,9};
-		long[] arrayImpares = new long[longArray];
->>>>>>> 82e3c504551fd8d71f8fb0e261e02d5b6b3e74f3
+		
 		
 		for(int i=0;i<=longArray - 1; i++) {
 			System.out.print(arrayNumeros[i] + " ");
 		}
 		
-<<<<<<< HEAD
 		System.out.println("\n");
 		int contPares = 0, contImpares = 0;
 		int j = 0;
@@ -70,7 +65,7 @@ public class Ejercicio8 {
 			}
 			
 		}
-<<<<<<< HEAD
+
 		for(int i=0; i<=contPares; i++) {
 			arrayNumeros[i] = arrayPares[i];	
 		}
@@ -84,16 +79,11 @@ public class Ejercicio8 {
 		System.out.println("\nIteraciones " + contIteraciones);
 		
 		
-=======
-		System.out.println("");
-		for (int i = contPares, j=0; i < arrayNumeros.length; i++, j++) {
-			arrayNumeros[i] = arrayImpares[j];
-		}
 		System.out.println("");
 		for (int i = 0; i < arrayNumeros.length; i++) {
 			System.out.printf("%d ",arrayNumeros[i]);
 		}
->>>>>>> 82e3c504551fd8d71f8fb0e261e02d5b6b3e74f3
+
 	
 	}
 	

@@ -250,13 +250,9 @@ public class FuncionesMatematicas {
 
 	public static long[] getRandomArrayLong(int longArray, long min, long max) {
 		long[] arrayNumeros = new long[longArray];
-<<<<<<< HEAD
+
 		for(int i=0; i<=arrayNumeros.length-1; i++) {
-=======
-		for(int i=0; i<arrayNumeros.length; i++) {
->>>>>>> 82e3c504551fd8d71f8fb0e261e02d5b6b3e74f3
-			long num = (long)(Math.random() * (max - min + 1) + min);
-			arrayNumeros[i] = num;	
+
 		}
 		return(arrayNumeros);
 	}
