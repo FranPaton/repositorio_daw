@@ -1,4 +1,4 @@
-package ejerciciosClase.unidad5.cuentabancaria;
+package unidad5.cuentabancaria;
 
 public class CuentaBancariaDatosIncorrectosException extends Exception {
 

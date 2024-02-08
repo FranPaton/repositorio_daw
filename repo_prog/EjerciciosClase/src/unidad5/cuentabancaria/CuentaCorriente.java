@@ -1,4 +1,4 @@
-package ejerciciosClase.unidad5.cuentabancaria;
+package unidad5.cuentabancaria;
 
 import org.apache.commons.lang3.StringUtils;
 

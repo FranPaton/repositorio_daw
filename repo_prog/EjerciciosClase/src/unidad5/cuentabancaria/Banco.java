@@ -1,4 +1,4 @@
-package ejerciciosClase.unidad5.cuentabancaria;
+package unidad5.cuentabancaria;
 
 public class Banco {
 	private CuentaBancaria[] cuentas;
@@ -31,6 +31,5 @@ public class Banco {
 		}
 		System.out.println("No se permiten más cuentas bancarias en este banco");
 		return false;
-
 	}
 }

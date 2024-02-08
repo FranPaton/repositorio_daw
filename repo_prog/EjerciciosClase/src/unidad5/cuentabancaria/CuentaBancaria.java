@@ -1,4 +1,5 @@
-package ejerciciosClase.unidad5.cuentabancaria;
+package unidad5.cuentabancaria;
+
 
 public abstract class CuentaBancaria implements Imprimible {
 
